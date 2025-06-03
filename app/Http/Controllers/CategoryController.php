@@ -21,5 +21,6 @@ class CategoryController extends Controller
             'message' => 'Category created successfully',
             'category' => $category,
         ], 201);
+        //nour
     }
 }
