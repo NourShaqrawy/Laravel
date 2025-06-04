@@ -12,7 +12,7 @@ use App\Http\Controllers\CourseController;
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
-Route::post('register', [UserController::class, 'register']);//register
+Route::post('register', [UserController::class, 'register']);//
 Route::post('login', [UserController::class, 'login']);
 Route::post('logout', [UserController::class, 'logout'])->middleware('auth:sanctum');
 
